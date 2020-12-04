@@ -1,0 +1,24 @@
+{
+    "name": "duruo/ajax-scroll",
+    "description": "Magento2 Ajax Scroll",
+    "config": {
+        "sort-packages": true
+    },
+    "require": {
+        "php": "~7.2.0||~7.3.0||~7.4.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Duruo\\AjaxScroll\\": ""
+        }
+    },
+    "version": "1.0.0"
+}

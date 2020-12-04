@@ -1,0 +1,27 @@
+<!-- 
+/**
+ * Copyright © Duruo, Inc. All rights reserved.
+ * 594153885@qq.com
+ */
+ -->
+<div class="ajaxscroll-spinner" style="text-align: center;opacity:0;">
+    <img alt="Loading..." src="<?= $block->getViewFileUrl('images/loader-2.gif')?>">
+</div>
+<script type="text/javascript">
+    require(['jquery'], function($) {
+        if ($(".products+.toolbar .pages .item.pages-item-next").length) {
+            let ias = new InfiniteAjaxScroll('.list.product-items', {
+                item: ".product.product-item",
+                pagination: ".products+.toolbar .pages .item.pages-item-next",
+                next: ".next",
+                spinner: '.ajaxscroll-spinner',
+                logger: false
+            });
+        }
+    })
+</script>
+<style>
+.products+.toolbar.toolbar-products {
+    display: none;
+}
+</style>
